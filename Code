@@ -1,0 +1,31 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+   int t;
+   //cout<<"enter t"<<endl;
+   cin>>t;
+   while(t--)
+   { int count=0;
+       string s1,s2,s3,s4,s5,s6,s7,s8;
+       //cout<<"enter s1,s2,s3,s4"<<endl;
+       cin>>s1>>s2>>s3>>s4;
+       //cout<<"enter s5,s6,s7,s8"<<endl;
+       cin>>s5>>s6>>s7>>s8;
+       if(s1.compare(s5)==0 || s1.compare(s6)==0 || s1.compare(s7)==0 || s1.compare(s8)==0)
+        count++;
+       if(s2.compare(s5)==0 || s2.compare(s6)==0 || s2.compare(s7)==0 || s2.compare(s8)==0)
+        count++;
+       if(s3.compare(s5)==0 || s3.compare(s6)==0 || s3.compare(s7)==0 || s3.compare(s8)==0)
+        count++;
+        if(s4.compare(s5)==0 || s4.compare(s6)==0 || s4.compare(s7)==0 || s4.compare(s8)==0)
+        count++;
+        if(count>=2)
+            cout<<"similar"<<endl;
+        else
+            cout<<"dissimilar"<<endl;
+   }
+    return 0;
+}
